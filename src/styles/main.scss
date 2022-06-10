@@ -1,0 +1,15 @@
+@import "./vendors/locomotive.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  &.hero {
+    background-color: antiquewhite;
+  }
+}
