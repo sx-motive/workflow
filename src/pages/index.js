@@ -4,6 +4,8 @@ import Button from "../components/button";
 
 import Text from "../components/text";
 
+import Img from "../media/due.jpg";
+
 export default function Index() {
   return (
     <>
@@ -49,7 +51,8 @@ export default function Index() {
       <section className="workflow" data-scroll-section data-scroll-repeat>
         <div className="container">
           <ul>
-            <li>
+            <li data-scroll data-scroll-speed="4">
+              <img src={Img} alt="project" />
               <Text caption size="big" className="title">
                 ALWAYS KEEN FOR A GOOD
               </Text>
@@ -57,7 +60,8 @@ export default function Index() {
                 2022
               </Text>
             </li>
-            <li>
+            <li data-scroll data-scroll-speed="2">
+              <img src={Img} alt="project" />
               <Text caption size="big" className="title">
                 ALWAYS KEEN FOR A GOOD
               </Text>
@@ -65,9 +69,10 @@ export default function Index() {
                 2022
               </Text>
             </li>
-            <li>
+            <li data-scroll data-scroll-speed="0">
+              <img src={Img} alt="project" />
               <Text caption size="big" className="title">
-                ALWAYS KEEN FOR A GOOD
+                Onestandart
               </Text>
               <Text paragraph className="date">
                 2022

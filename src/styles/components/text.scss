@@ -7,17 +7,15 @@ div.text {
     font-weight: 400;
     margin-top: 4rem;
     text-transform: uppercase;
-    .word-wrapper {
-      margin-right: 20px;
-      .letter-wrap {
+    .line-wrap {
+      position: relative;
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      .text-line {
         position: relative;
-        display: inline-block;
-        overflow: hidden;
-        .letter {
-          position: relative;
-          display: block;
-          transform-origin: top left;
-        }
+        display: block;
+        transform-origin: top left;
       }
     }
     &.main {

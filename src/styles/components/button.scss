@@ -156,13 +156,13 @@
         top: 105%;
         transform: skewY(7deg);
         transform-origin: left top;
-        color: $black;
+        color: $white;
       }
       &::before {
         top: 0;
         transform: skewY(0);
         transform-origin: right bottom;
-        color: $white;
+        color: $black;
       }
       &::after,
       &::before {
@@ -189,12 +189,12 @@
       height: calc(100% - 2px);
       left: 1px;
       top: 1px;
-      background-color: $black;
+      background-color: $light;
       z-index: -1;
       border-radius: 1rem;
     }
     .ripple-span {
-      background-color: $light;
+      background-color: $dark;
     }
     &:hover {
       color: $black;

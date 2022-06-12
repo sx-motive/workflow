@@ -26,7 +26,7 @@
 }
 
 .about {
-  padding: 5rem 0;
+  margin: 8rem 0 14rem 0;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -36,18 +36,35 @@
     position: relative;
     margin: 3rem auto 3rem auto;
     width: 100%;
-    max-width: 760px;
+    max-width: 660px;
   }
 }
 
 .workflow {
-  padding: 5rem 0;
+  margin: 10rem 0 5rem 0;
   .container {
     ul {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
       li {
+        position: relative;
+        width: 100%;
+        max-width: 50%;
+        height: 470px;
         display: flex;
         align-items: flex-end;
-        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+        border-radius: 1rem;
+        padding: 1rem;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }
