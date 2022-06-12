@@ -1,15 +1,13 @@
+@import "./base/fonts.scss";
+@import "./base/base.scss";
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+
+@import "./components/text.scss";
+@import "./components/button.scss";
+@import "./components/menu.scss";
+@import "./components/cookie.scss";
+
+@import "./pages/index.scss";
 @import "./vendors/locomotive.scss";
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  position: relative;
-  height: 100vh;
-  &.hero {
-    background-color: antiquewhite;
-  }
-}

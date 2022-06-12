@@ -1,0 +1,94 @@
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  z-index: -2;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $dark;
+    transform: translate(100%, 0);
+    transition: all 0.57s cubic-bezier(0.28, 0.81, 0.43, 0.97);
+    will-change: all;
+    z-index: 1;
+  }
+  .wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 8rem 3rem;
+    background-color: transparent;
+    color: $white;
+    opacity: 0;
+    transition: all 0.2s cubic-bezier(0.28, 0.81, 0.43, 0.97);
+    will-change: all;
+    z-index: 2;
+  }
+  &.-open {
+    z-index: 99;
+    opacity: 1;
+  }
+  &.-open .wrapper {
+    opacity: 1;
+  }
+  &.-open .bg {
+    transform: translate(0, 0);
+  }
+}
+
+/* burger */
+
+.burger-wrap {
+  position: fixed;
+  top: 0;
+  right: $global-container-padding;
+  height: 5rem;
+  width: 5rem;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.burger {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  &::before,
+  &::after {
+    content: "";
+    right: -1.5rem;
+    width: 2rem;
+    height: 1px;
+    position: absolute;
+    transition: all 250ms ease-out;
+    will-change: transform;
+    background-color: $black;
+  }
+  &::before {
+    transform: translateY(-0.25rem);
+  }
+  &::after {
+    transform: translateY(0.25rem);
+  }
+  &.-open {
+    &::before {
+      transform: translateY(0) rotate(45deg);
+      background-color: $white;
+    }
+    &::after {
+      transform: translateY(0) rotate(-45deg);
+      background-color: $white;
+    }
+  }
+}

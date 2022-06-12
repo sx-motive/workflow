@@ -1,0 +1,54 @@
+.hero {
+  .container {
+    background-image: url("../../../public/images/due.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 0;
+    color: $white;
+    text-align: center;
+    padding: 25vh 0 0 0;
+    height: 75vh;
+    overflow: hidden;
+  }
+  .marquee-container {
+    overflow: hidden;
+    width: 105%;
+  }
+  .caption {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-right: 4rem;
+  }
+  .paragraph {
+    font-family: $title-ff !important;
+    font-size: 2rem;
+  }
+}
+
+.about {
+  padding: 5rem 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  .paragraph {
+    position: relative;
+    margin: 3rem auto 3rem auto;
+    width: 100%;
+    max-width: 760px;
+  }
+}
+
+.workflow {
+  padding: 5rem 0;
+  .container {
+    ul {
+      li {
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+}

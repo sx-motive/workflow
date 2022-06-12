@@ -1,0 +1,19 @@
+footer {
+  padding-bottom: calc($global-container-padding / 2);
+  .container {
+    padding: 2rem 3rem;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .social-list {
+      display: flex;
+      gap: 2rem;
+    }
+    .skew span::after,
+    .skew span::before {
+      color: $white;
+    }
+  }
+}

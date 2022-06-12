@@ -1,0 +1,54 @@
+div.text {
+  position: relative;
+  display: block;
+  margin-bottom: 2rem;
+  &.caption {
+    font-family: $title-ff;
+    font-weight: 400;
+    margin-top: 4rem;
+    text-transform: uppercase;
+    .word-wrapper {
+      margin-right: 20px;
+      .letter-wrap {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        .letter {
+          position: relative;
+          display: block;
+          transform-origin: top left;
+        }
+      }
+    }
+    &.main {
+      font-size: 14rem;
+    }
+    &.big {
+      font-size: 6rem;
+    }
+    &.medium {
+      font-size: 4rem;
+    }
+    &.small {
+      font-size: 2rem;
+    }
+  }
+  &.paragraph {
+    font-family: $default-ff;
+    font-weight: 400;
+    .line-wrap {
+      position: relative;
+      display: block;
+      width: 100%;
+
+      overflow: hidden;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      .text-line {
+        position: relative;
+        display: block;
+        line-height: 1;
+      }
+    }
+  }
+}

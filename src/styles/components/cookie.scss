@@ -1,0 +1,22 @@
+.cookie {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  width: 16rem;
+  padding: 1.7rem;
+  background-color: $black;
+  color: $white;
+  border-radius: 0.8rem 0.8rem 0.8rem 0;
+  font-size: 0.9rem;
+  .button {
+    margin-top: 1rem;
+    display: block;
+  }
+  .skew span::before,
+  .skew span::after {
+    color: $white;
+  }
+  &.-gotit {
+    display: none;
+  }
+}
